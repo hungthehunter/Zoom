@@ -1,4 +1,5 @@
-const socket = io("http://localhost:3000"); 
+// const socket = io("http://localhost:3000"); 
+const socket = io("https://zoom-tuvm.onrender.com");
 // const socket = io("http://192.168.2.15:3000"); 
 document.getElementById("txtRoomId").value = randomString(15).trim();
 let currentRoomId = ""; // Biến để lưu RoomID hiện tại

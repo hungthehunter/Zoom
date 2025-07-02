@@ -6,7 +6,7 @@ const path = require('path');
 const port = process.env.PORT || 3000;
 const io = require("socket.io")(http, {
     cors: {
-        origin: "*",
+        origin: ["https://zoom-tuvm.onrender.com","http://localhost:3000"],
         methods: ["GET", "POST"],
     },
 });
